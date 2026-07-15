@@ -160,7 +160,9 @@ section.block.alt { background: var(--white); }
 .card .price {
   display: inline-block; background: var(--gold-light); color: #8a6516;
   font-weight: 700; border-radius: 20px; padding: 3px 14px; font-size: .9rem; margin-top: 12px;
+  text-decoration: none;
 }
+a.price:hover { background: var(--gold); color: #fff; }
 
 /* ===== Foto-placeholders =====
    Vervang een .ph-blok later door: <img src="..." alt="..."> */
