@@ -230,6 +230,34 @@ table.prices td.p { font-weight: 700; color: var(--petrol-dark); white-space: no
   font-size: .95rem;
 }
 
+/* ===== Aankondiging ===== */
+.nieuws {
+  background: var(--gold-light);
+  border: 2px solid var(--gold);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 34px 38px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.nieuws .nieuws-icon {
+  flex: 0 0 auto;
+  width: 78px; height: 78px; border-radius: 50%;
+  background: var(--gold); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.2rem;
+}
+.nieuws .nieuws-body { flex: 1 1 320px; min-width: 0; }
+.nieuws h2 { margin-bottom: .35em; }
+.nieuws p { color: #6c5417; }
+.nieuws p:last-of-type { margin-bottom: 1.2em; }
+@media (max-width: 640px) {
+  .nieuws { padding: 26px 22px; gap: 18px; }
+  .nieuws .nieuws-icon { width: 62px; height: 62px; font-size: 1.7rem; }
+}
+
 /* ===== Contact ===== */
 .contact-grid { display: grid; gap: 26px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 .contact-card {
